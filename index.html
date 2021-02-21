@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,6 +11,10 @@
         <span p-text="message"></span>
         <br>
         <input type="text" p-model="message" />
+        <input type="text" p-model="message" />
+        <br>
+        <input type="text" p-model="image" />
+        <img p-bind="src:image" >
     </div>
     <script src="./miniVue.js"></script>
     <script>
@@ -18,7 +22,8 @@
         const app = createApp({
             data() {
                 return {
-                    message: "Hola, David!"
+                    message: "Hola, David!",
+                    image: "https://i.pinimg.com/originals/67/3a/d0/673ad0cca58ab4aa0c28fc75085b5335.jpg"
                 }
             }
         });
